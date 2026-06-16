@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "obsidian-regulatory": {
+      "url": "https://mcp.obsidianri.com/sse",
+      "headers": {
+        "Authorization": "Bearer obs_live_your_key_here"
+      }
+    }
+  }
+}
