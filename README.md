@@ -63,10 +63,10 @@ The server exposes structured tools your assistant calls in natural language:
 
 | Tool | What it does |
 |------|--------------|
-| `obsidian.search` | Query the enriched regulatory feed by topic, jurisdiction, framework, and date |
-| `obsidian.get_framework` | Status, timeline, and in-force dates for a framework |
-| `obsidian.list_sources` | The official sources behind an answer |
-| `obsidian.whats_next` | Upcoming deadlines and milestones |
+| `regulatory_search` | Semantic search across verified, tier-0 official regulations, filtered by jurisdiction, framework, topic, and date. Every result carries its official source, date, and status. |
+| `search_news` | Keyword search across regulatory news and updates, returning title, official source, and date. |
+
+Plus helper tools for frameworks, industries, official sources, and the latest regulatory news.
 
 ## Example prompts
 
