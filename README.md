@@ -10,7 +10,7 @@
 **Obsidian Regulatory MCP** is a [Model Context Protocol](https://modelcontextprotocol.io) server that gives AI assistants real-time access to verified regulatory data from **850+ official, tier-0 sources across 50+ jurisdictions** (Chemicals, ESG, Life Sciences). It is the missing data layer that stops AI from hallucinating on regulation.
 
 - 🌐 **Website and access:** https://obsidianri.com/mcp
-- 🟢 **Status:** early access (private beta). [Join the waitlist](https://obsidianri.com/mcp) for an API key.
+- 🟢 **Status:** live. Sign in with Obsidian (OAuth 2.1), no API key. Free tier, no credit card.
 
 ---
 
@@ -28,36 +28,27 @@ Claude (Desktop and Claude Code), Cursor, and any MCP-compatible client. ChatGPT
 
 ## Quickstart
 
-Get a free API key from the [waitlist](https://obsidianri.com/mcp), then add the connector to your client. Full walkthrough: [How to Connect a Regulatory MCP to Claude](https://obsidianri.com/blog/how-to-connect-regulatory-mcp-to-claude).
+**No API key to copy.** Add the connector URL; on first use your assistant opens a browser to sign in with Obsidian (OAuth 2.1). New accounts get the free tier automatically. Full walkthrough: [How to Connect a Regulatory MCP to Claude](https://obsidianri.com/blog/how-to-connect-regulatory-mcp-to-claude).
 
-### Claude Desktop
+### Claude Desktop / Cursor
 
-`claude_desktop_config.json`:
+Add a custom connector pointing at:
 
-```json
-{
-  "mcpServers": {
-    "obsidian-regulatory": {
-      "url": "https://mcp.obsidianri.com/sse",
-      "headers": { "Authorization": "Bearer obs_live_your_key_here" }
-    }
-  }
-}
 ```
+https://mcp.obsidianri.com/sse
+```
+
+No auth headers needed: the client discovers the OAuth flow automatically and prompts you to sign in.
 
 ### Claude Code
 
 ```bash
-claude mcp add --transport sse obsidian-regulatory \
-  https://mcp.obsidianri.com/sse \
-  --header "Authorization: Bearer obs_live_your_key_here"
+claude mcp add --transport sse obsidian-regulatory https://mcp.obsidianri.com/sse
 ```
 
-### Cursor
+Then authorize in the browser when prompted. See also [`examples/`](examples/) for raw config.
 
-`~/.cursor/mcp.json`: see [`examples/cursor_mcp.json`](examples/cursor_mcp.json).
-
-> Endpoints shown are illustrative during early access. Your welcome email includes the live values.
+> Auth is OAuth 2.1 (sign in with your Obsidian account). The free tier needs no credit card.
 
 ## What you get
 
@@ -89,7 +80,7 @@ More: [Regulatory Research Prompts That Work](https://obsidianri.com/blog/claude
 
 ## Get access
 
-Obsidian Regulatory MCP is in early access. **[Join the waitlist](https://obsidianri.com/mcp)** to get your free API key and the live setup guide.
+Just add the connector and sign in with your Obsidian account, no API key to copy. Free tier, no credit card. Learn more at **[obsidianri.com/mcp](https://obsidianri.com/mcp)**.
 
 ## About
 
