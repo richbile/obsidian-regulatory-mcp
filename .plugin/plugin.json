@@ -1,0 +1,14 @@
+{
+  "name": "obsidian-regulatory-mcp",
+  "version": "0.1.0",
+  "description": "Verified, tier-0 regulatory data for AI across 850+ official sources and 50+ jurisdictions.",
+  "author": {
+    "name": "Obsidian Regulatory Intelligence",
+    "url": "https://obsidianri.com"
+  },
+  "homepage": "https://obsidianri.com/mcp",
+  "repository": "https://github.com/richbile/obsidian-regulatory-mcp",
+  "license": "MIT",
+  "keywords": ["mcp", "regulatory", "compliance", "regtech", "claude", "cursor", "legal", "chemicals", "esg", "life-sciences"],
+  "mcpServers": "./mcp.json"
+}
