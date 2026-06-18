@@ -35,7 +35,7 @@ Claude (Desktop and Claude Code), Cursor, and any MCP-compatible client. ChatGPT
 Add a custom connector pointing at:
 
 ```
-https://mcp.obsidianri.com/sse
+https://mcp.obsidianri.com/mcp
 ```
 
 No auth headers needed: the client discovers the OAuth flow automatically and prompts you to sign in.
@@ -43,7 +43,7 @@ No auth headers needed: the client discovers the OAuth flow automatically and pr
 ### Claude Code
 
 ```bash
-claude mcp add --transport sse obsidian-regulatory https://mcp.obsidianri.com/sse
+claude mcp add --transport http obsidian-regulatory https://mcp.obsidianri.com/mcp
 ```
 
 Then authorize in the browser when prompted. See also [`examples/`](examples/) for raw config.

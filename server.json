@@ -11,8 +11,8 @@
   },
   "remotes": [
     {
-      "type": "sse",
-      "url": "https://mcp.obsidianri.com/sse"
+      "type": "streamable-http",
+      "url": "https://mcp.obsidianri.com/mcp"
     }
   ]
 }

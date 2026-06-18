@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "obsidian-regulatory": {
-      "url": "https://mcp.obsidianri.com/sse"
+      "url": "https://mcp.obsidianri.com/mcp"
     }
   }
 }
