@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.richbile/obsidian-regulatory-mcp",
   "title": "Obsidian Regulatory MCP",
-  "description": "Verified, tier-0 regulatory data for AI assistants. Query 850+ official regulatory sources across 50+ jurisdictions (Chemicals, ESG, Life Sciences) with a source, date, and status on every answer.",
+  "description": "Verified, tier-0 regulatory data for AI across 850+ official sources and 50+ jurisdictions.",
   "version": "0.1.0",
   "websiteUrl": "https://obsidianri.com/mcp",
   "repository": {
