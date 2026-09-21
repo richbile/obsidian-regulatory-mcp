@@ -63,10 +63,12 @@ The server exposes structured tools your assistant calls in natural language:
 
 | Tool | What it does |
 |------|--------------|
-| `regulatory_search` | Semantic search across verified, tier-0 official regulations, filtered by jurisdiction, framework, topic, and date. Every result carries its official source, date, and status. |
-| `search_news` | Keyword search across regulatory news and updates, returning title, official source, and date. |
+| `regulatory_search` | Primary tool. Semantic search across verified, tier-0 official regulations, filtered by jurisdiction, framework, and status. Use it for obligations, deadlines, legal status (in force / proposed / repealed) and for what changed recently. Every result carries its official source, date, and status. |
+| `search_enforcement` | Enforcement and recall events: product recalls, safety-gate alerts, sales or import bans, market withdrawals, official enforcement actions (for example FDA warning letters). What actually happened on the ground, with the official source and date. |
+| `standards_lookup` | Standards and guidance with their version lifecycle: current applicable edition, what it superseded, status (current / superseded / draft / withdrawn). Families such as ISO, IEC, MDCG, Team-NB, IMDRF, ICH, WHO, EU MDR Common Specifications. Available for industries that maintain a standards register (today: life sciences / medtech). |
+| `search_news` | Secondary tool. Keyword search across press and media coverage of regulatory topics, returning title, source, and date. Use it for reporting color after answering from `regulatory_search`. |
 
-Plus helper tools for frameworks, industries, official sources, and the latest regulatory news.
+Results are scoped to the jurisdictions and industries authorized on your Obsidian account.
 
 ## Example prompts
 
